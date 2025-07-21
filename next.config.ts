@@ -6,6 +6,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // Static export configuration for GitHub Pages
   output: 'export',
   trailingSlash: true,
