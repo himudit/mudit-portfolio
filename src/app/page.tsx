@@ -7,10 +7,17 @@ import Header from '@/sections/HeroSection';
 import Footer from '@/sections/footer';
 
 // Optimize dynamic imports with better loading strategies
-const MapComponent = dynamic(() => import('@/components/openlayers-map/map'), {
+// const MapComponent = dynamic(() => import('@/components/openlayers-map/map'), {
+//   loading: () => <div className="h-screen flex items-center justify-center">Loading Map...</div>,
+//   ssr: false,
+// });
+
+const MapComponent = dynamic(() => import('@/components/LeafletMap'), {
   loading: () => <div className="h-screen flex items-center justify-center">Loading Map...</div>,
-  ssr: false,
+  ssr: false, // disable server-side rendering (Leaflet needs window)
 });
+
+
 
 const ProjectsShowcase = dynamic(() => import('@/sections/projects'), {
   loading: () => (
@@ -106,9 +113,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white dark:bg-darkBg p-4 md:p-6 lg:p-8">
       <div
-        className={`relative mx-auto w-container max-w-full bg-white dark:bg-black md:border-4 md:border-black md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] min-h-[calc(100vh-2rem)] md:min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] ${
-          isContentVisible ? 'opacity-100' : 'opacity-0'
-        } transition-opacity duration-300`}
+        className={`relative mx-auto w-container max-w-full bg-white dark:bg-black md:border-4 md:border-black md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] dark:md:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] min-h-[calc(100vh-2rem)] md:min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] ${isContentVisible ? 'opacity-100' : 'opacity-0'
+          } transition-opacity duration-300`}
       >
         <Navbar />
         <Suspense fallback={null}>

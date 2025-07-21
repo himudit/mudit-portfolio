@@ -13,18 +13,15 @@ const spaceGrotesk = Space_Grotesk({
 // Metadata needs to be exported this way in Next.js 13+
 export const metadata: Metadata = {
   title: {
-    default: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
-    template: '%s | Ronit Jadhav',
+    default: 'Mudit Garg Full Stack Developer & Software Engineer',
+    template: '%s | Mudit Garg',
   },
   description:
     "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies. Expert in ArcGIS, QGIS, OpenLayers, Python, and JavaScript.",
   keywords: [
-    'Geospatial Developer',
+    'Full Stack Developer',
     'Software Engineer',
-    'Germany',
-    'ArcGIS',
-    'QGIS',
-    'OpenLayers',
+    'India',
     'Leaflet',
     'Python',
     'JavaScript',
@@ -32,19 +29,21 @@ export const metadata: Metadata = {
     'React',
     'Next.js',
     'PostGIS',
-    'GIS',
+    'MongoDB',
+    'Node.js',
+    'Express.js',
+    'AWS',
+    'Prisma',
     'Web Development',
     'Data Visualization',
     'Maps',
-    'Cartography',
-    'Remote Sensing',
   ],
-  authors: [{ name: 'Ronit Jadhav', url: 'https://ronitjadhav.github.io' }],
-  creator: 'Ronit Jadhav',
-  publisher: 'Ronit Jadhav',
-  metadataBase: new URL('https://ronitjadhav.github.io'),
+  authors: [{ name: 'Mudit Garg', url: 'https://github.com/himudit' }],
+  creator: 'Mudit Garg',
+  publisher: 'Mudit Garg',
+  metadataBase: new URL('https://github.com/himudit'),
   alternates: {
-    canonical: 'https://ronitjadhav.github.io/ronit.io',
+    canonical: 'https://github.com/himudit',
   },
   robots: {
     index: true,
@@ -63,8 +62,8 @@ export const metadata: Metadata = {
     title: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
     description:
       "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies. Expert in ArcGIS, QGIS, OpenLayers, Python, and JavaScript.",
-    url: 'https://ronitjadhav.github.io/ronit.io',
-    siteName: 'Ronit Jadhav Portfolio',
+    url: 'https://github.com/himudit',
+    siteName: 'Mudit Garg Portfolio',
     images: [
       {
         url: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
@@ -100,7 +99,7 @@ export default function RootLayout({
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Ronit Jadhav',
+    name: 'Mudit Garg',
     jobTitle: 'Geospatial Developer & Software Engineer',
     description:
       'Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies.',
@@ -111,11 +110,9 @@ export default function RootLayout({
       addressCountry: 'Germany',
     },
     knowsAbout: [
-      'Geospatial Development',
-      'Software Engineering',
-      'ArcGIS',
-      'QGIS',
-      'OpenLayers',
+      'Full Stack Developer',
+      'Software Engineer',
+      'India',
       'Leaflet',
       'Python',
       'JavaScript',
@@ -123,17 +120,22 @@ export default function RootLayout({
       'React',
       'Next.js',
       'PostGIS',
+      'MongoDB',
+      'Node.js',
+      'Express.js',
+      'AWS',
+      'Prisma',
       'Web Development',
       'Data Visualization',
-      'Geographic Information Systems',
+      'Maps',
     ],
     worksFor: {
       '@type': 'Organization',
       name: 'Freelance',
     },
     sameAs: [
-      'https://github.com/ronitjadhav',
-      'https://linkedin.com/in/ronitjadhav',
+      'https://github.com/himudit',
+      'https://www.linkedin.com/in/mudit-garg-03m',
       // Add other social profiles as needed
     ],
   };

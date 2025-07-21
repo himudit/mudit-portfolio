@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { ThemeSwitcher } from './theme-switcher';
 import { DialogComponent } from './getInTouchDialog';
 import Image from 'next/image';
+import muditLogo from '@/media/muditLogo.png';
 import ronitLogo from '@/media/ronitLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -88,7 +89,8 @@ const NavBar = () => {
                 scrolltoHash('home');
               }}
             >
-              <Image src={ronitLogo} alt="Ronit Logo" width={70} height={70} />
+              {/* <Image src={ronitLogo} alt="Ronit Logo" width={70} height={70} /> */}
+              <Image src={muditLogo} alt="Ronit Logo" width={150} height={150} className='mt-4'/>
             </a>
           </h1>
 
@@ -157,7 +159,7 @@ function NavLinks() {
     { href: '#home', label: 'Home' },
     { href: '#journey', label: 'Journey' },
     { href: '#projects', label: 'Projects' },
-    { href: 'https://dev.to/ronitjadhav', label: 'Blogs' },
+    // { href: 'https://dev.to/ronitjadhav', label: 'Blogs' },
   ];
 
   return (

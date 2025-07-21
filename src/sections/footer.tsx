@@ -9,7 +9,6 @@ function NavLinks() {
     { href: '#home', label: 'Home' },
     { href: '#journey', label: 'Journey' },
     { href: '#projects', label: 'Projects' },
-    { href: 'https://dev.to/ronitjadhav', label: 'Blogs' },
   ];
 
   const scrolltoHash = (id: string) => {
@@ -70,11 +69,11 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col items-center lg:items-start mb-8">
               <div className="flex space-x-6 mb-6">
-                <a href="https://github.com/ronitjadhav" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/himudit" target="_blank" rel="noopener noreferrer">
                   <FaGithub className="text-4xl text-gray-800 dark:text-white hover:text-cerulean-400 transition-colors duration-300" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/ronitjadhav/"
+                  href="https://www.linkedin.com/in/mudit-garg-03m/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +87,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t-4 border-black pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-text font-bold text-lg dark:text-darkText">
-            © {currentYear} Ronit | Built with ❤ & ☕
+            © {currentYear} Mudit | Built with ❤ & ☕
           </p>
           <div className="bg-black text-white px-4 py-2 font-mono text-sm dark:bg-bg dark:text-black">
             &lt;/&gt; with Next.js + Tailwind

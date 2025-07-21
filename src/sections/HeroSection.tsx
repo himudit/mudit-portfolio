@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BiLogoPostgresql } from 'react-icons/bi';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
-import ronitImage from '@/media/ronit.png';
+import muditImage from '@/media/mudit_img2(cyber).jpg';
 import {
   SiAngular,
   SiArcgis,
@@ -17,6 +17,14 @@ import {
   SiPython,
   SiQgis,
   SiTypescript,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiRedux,
+  SiReact,
+  SiRedis,
+  SiPostgresql
 } from 'react-icons/si';
 import Image from 'next/image';
 import { DialogComponent } from '@/components/getInTouchDialog';
@@ -24,22 +32,43 @@ import ChatbotToggle from '@/components/ChatbotToggle';
 import React, { memo } from 'react';
 import { cn } from '@/lib/utils';
 
-// Memoize skills array to prevent re-creation on every render
+// const skills = [
+//   { text: 'HTML', Icon: SiHtml5 },
+//   { text: 'JavaScript', Icon: SiJavascript },
+//   { text: 'TypeScript', Icon: SiTypescript },
+//   { text: 'React', Icon: SiReact },
+//   { text: 'Redux', Icon: SiRedux },
+//   { text: 'Python', Icon: SiPython },
+//   { text: 'Tailwind CSS', Icon: SiTailwindcss },
+//   { text: 'NodeJS', Icon: SiNodedotjs },
+//   { text: 'ExpressJS', Icon: SiExpress },
+//   { text: 'MongoDB', Icon: SiMongodb },
+//   { text: 'PostgreSQL', Icon: SiPostgresql },
+//   { text: 'Redis', Icon: SiRedis },
+//   { text: 'Version Control', Icon: SiGit },
+//   { text: 'Docker', Icon: SiDocker },
+//   { text: 'Git', Icon: SiGit },
+//   { text: 'Leaflet', Icon: SiLeaflet },
+// ];
 const skills = [
-  { text: 'ArcGIS', Icon: SiArcgis },
-  { text: 'QGIS', Icon: SiQgis },
-  { text: 'OpenLayers', Icon: SiOpenlayers },
-  { text: 'Leaflet', Icon: SiLeaflet },
-  { text: 'Python', Icon: SiPython },
-  { text: 'JavaScript', Icon: SiJavascript },
-  { text: 'HTML', Icon: SiHtml5 },
-  { text: 'TypeScript', Icon: SiTypescript },
-  { text: 'Angular', Icon: SiAngular },
-  { text: 'PostGIS', Icon: BiLogoPostgresql },
-  { text: 'Version Control', Icon: SiGit },
-  { text: 'Docker', Icon: SiDocker },
-  { text: 'Git', Icon: SiGit },
+  { text: 'HTML', Icon: SiHtml5, color: '#E34F26' },
+  { text: 'Tailwind CSS', Icon: SiTailwindcss, color: '#38BDF8' },
+  { text: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+  { text: 'TypeScript', Icon: SiTypescript, color: '#3178C6' },
+  { text: 'React', Icon: SiReact, color: '#61DAFB' },
+  { text: 'Redux', Icon: SiRedux, color: '#764ABC' },
+  { text: 'NodeJS', Icon: SiNodedotjs, color: '#339933' },
+  { text: 'ExpressJS', Icon: SiExpress, color: '#000000' },
+  { text: 'MongoDB', Icon: SiMongodb, color: '#47A248' },
+  { text: 'PostgreSQL', Icon: SiPostgresql, color: '#4169E1' },
+  { text: 'Redis', Icon: SiRedis, color: '#DC382D' },
+  { text: 'Version Control', Icon: SiGit, color: '#F05032' },
+  { text: 'Docker', Icon: SiDocker, color: '#2496ED' },
+  { text: 'Git', Icon: SiGit, color: '#F05032' },
+  { text: 'Leaflet', Icon: SiLeaflet, color: '#199900' },
+  { text: 'Python', Icon: SiPython, color: '#3776AB' },
 ];
+
 
 const HeroSection = memo(function HeroSection() {
   const containerVariants = {
@@ -147,7 +176,7 @@ const HeroSection = memo(function HeroSection() {
             variants={itemVariants}
             className="text-2xl font-heading md:text-3xl lg:text-5xl mt-3 md:mt-5 text-center lg:text-left"
           >
-            I&#39;m Ronit Jadhav. 👋
+            I&#39;m Mudit Garg. 👋
           </motion.h1>
 
           <motion.p
@@ -162,7 +191,7 @@ const HeroSection = memo(function HeroSection() {
           <div className="flex flex-col items-center lg:items-start mb-6 md:mb-8 w-full">
             <motion.div className="flex space-x-6 mb-5 md:mb-6" variants={itemVariants}>
               <motion.a
-                href="https://github.com/ronitjadhav"
+                href="https://github.com/himudit"
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={socialIconVariants}
@@ -171,7 +200,7 @@ const HeroSection = memo(function HeroSection() {
                 <FaGithub className="text-3xl md:text-4xl text-gray-800 dark:text-white hover:text-cerulean-400 transition-colors duration-300" />
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/ronitjadhav/"
+                href="https://www.linkedin.com/in/mudit-garg-03m/"
                 target="_blank"
                 rel="noopener noreferrer"
                 variants={socialIconVariants}
@@ -182,7 +211,7 @@ const HeroSection = memo(function HeroSection() {
             </motion.div>
 
             {/* Contact button with proper spacing for mobile */}
-            <motion.div
+            {/* <motion.div
               variants={buttonVariants}
               initial="hidden"
               animate="visible"
@@ -196,17 +225,36 @@ const HeroSection = memo(function HeroSection() {
                 inputLabels={{ name: 'Name', email: 'Email', message: 'Message' }}
                 buttonClassName="h-10 text-base font-heading md:h-12 md:text-lg lg:h-14 lg:text-xl"
               />
+            </motion.div> */}
+
+            <motion.div
+              variants={buttonVariants}
+              initial="hidden"
+              animate="visible"
+              whileTap="tap"
+              className="relative z-10 mt-2"
+            >
+              <a
+                href="https://drive.google.com/file/d/1KxiV0IMKVzTSPGUcBnPUxmT6Yqalqfp5/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center h-5 text-base font-heading md:h-12 md:text-lg lg:h-14 lg:text-xl px-6 rounded-md bg-main text-black hover:bg-main transition-all duration-300 border-black"
+              >
+                Resume
+              </a>
             </motion.div>
 
+
+
             {/* Chatbot button - positioned below Get in Touch on mobile, right corner on desktop */}
-            <motion.div
+            {/* <motion.div
               variants={buttonVariants}
               initial="hidden"
               animate="visible"
               className="relative z-10 mt-4 lg:hidden"
             >
               <ChatbotToggle />
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
 
@@ -215,13 +263,13 @@ const HeroSection = memo(function HeroSection() {
           variants={itemVariants}
         >
           <Image
-            src={ronitImage}
-            alt="Ronit Jadhav"
-            priority // This is above the fold, so load it immediately
+            src={muditImage}
+            alt="Mudit Garg"
+            priority
             width={400}
             height={400}
-            sizes="(max-width: 768px) 280px, (max-width: 1024px) 350px, 450px"
-            className="w-auto h-auto max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[450px]"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 60vw, 450px"
+            className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[350px] lg:max-w-[450px] h-auto rounded-xl shadow-lg"
             placeholder="blur"
           />
         </motion.div>
@@ -247,7 +295,7 @@ const HeroSection = memo(function HeroSection() {
               key={id}
               whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
             >
-              <skill.Icon className="text-2xl sm:text-3xl lg:text-4xl mr-2 sm:mr-3" />
+              <skill.Icon className="text-2xl sm:text-3xl lg:text-4xl mr-2 sm:mr-3" color={skill.color} />
               <span className="text-lg sm:text-xl lg:text-2xl font-heading">{skill.text}</span>
             </motion.div>
           ))}

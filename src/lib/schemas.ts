@@ -26,12 +26,12 @@ export const breadcrumbSchema = {
 export const portfolioSchema = {
   '@context': 'https://schema.org',
   '@type': 'CreativeWork',
-  name: 'Ronit Jadhav Portfolio',
+  name: 'Mudit Garg Portfolio',
   description:
     'Professional portfolio showcasing geospatial development and software engineering projects',
   author: {
     '@type': 'Person',
-    name: 'Ronit Jadhav',
+    name: 'Mudit Garg',
   },
   url: 'https://ronitjadhav.github.io/ronit.io',
   dateCreated: '2024',

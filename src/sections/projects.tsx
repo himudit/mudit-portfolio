@@ -1,6 +1,8 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import digipinImage from '../media/digipin.jpeg';
+import edusphere from '../media/edusphere.png';
+import expensemate from '../media/expensemate.png'
 import qgisHubImage from '../media/QGIS-Banner.jpg';
 import olBenchImage from '../media/olBench.png';
 import Image from 'next/image';
@@ -9,22 +11,22 @@ import { cn } from '@/lib/utils';
 const ProjectsShowcase = () => {
   const projects = [
     {
-      title: 'Digipin',
+      title: 'EduSphere - Online Course Management System',
       description:
-        'Search for the DIGIPIN for your location. This app demonstrates how to use the Digital Postal Index Number (DIGIPIN) by the Department of Posts in India, aiming to simplify geo-coded addressing for public and private services.',
-      tech: ['Openlayers', 'Next.js', 'TypeScript', 'Tailwind CSS'],
-      github: 'https://github.com/ronitjadhav/digipin-openlayers',
-      live: 'https://digipin.maplabs.tech',
-      image: digipinImage, // Ensure this path is correct
+        'A PERN stack e-learning platform enabling secure course purchases (Razorpay), role-based access (JWT), and media-rich content (Cloudinary) with automated enrollment and responsive dashboards.',
+      tech: ['TypeScript', 'React.js', 'NodeJS', 'ExpressJS', 'PostgreSQL', 'Cloudinary', 'Razorpay'],
+      github: 'https://github.com/himudit/EduSphere',
+      live: 'https://edusphere-wine.vercel.app/',
+      image: edusphere, // Ensure this path is correct
     },
     {
-      title: 'QGIS Hub Plugin',
+      title: 'ExpenseMate - Your Personal Expense Tracker',
       description:
-        'Developed at Camptocamp with help from Ismail Sunni, this plugin allows QGIS users to easily browse and add resources from the QGIS Hub directly into their projects. It supports grid and list views, search, and filtering by resource type.',
-      tech: ['Python', 'Qt', 'QGIS'],
-      github: 'https://github.com/qgis/QGIS-Hub-Plugin',
-      live: 'https://plugins.qgis.org/plugins/qgis_hub_plugin/',
-      image: qgisHubImage,
+        'A React expense tracker with Appwrite authentication, Redux state management, and Recharts visualizations for tracking income, expenses, and financial insights.',
+      tech: ['ReactJS', 'Recharts', 'Appwrite', 'Redux Toolkit'],
+      github: 'https://github.com/himudit/ExpenseTracker',
+      live: 'https://expensemate-nu.vercel.app/',
+      image: expensemate,
     },
     {
       title: 'Openlayers Benchmark',
@@ -77,7 +79,7 @@ const ProjectsShowcase = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform group-hover:scale-110"
+                  className="w-full h-full object-contain transition-transform group-hover:scale-110"
                   width={600}
                   height={400}
                 />

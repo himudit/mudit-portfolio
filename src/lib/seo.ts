@@ -14,7 +14,7 @@ interface SEOProps {
 }
 
 export function generateSEO({
-  title = 'Ronit Jadhav - Geospatial Developer & Software Engineer',
+  title = 'Mudit Garg - Full Stack Developer & Software Engineer',
   description = "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies.",
   keywords = [],
   image = 'https://ronitjadhav.github.io/ronit.io/ronit.png',
@@ -26,24 +26,19 @@ export function generateSEO({
   tags = [],
 }: SEOProps = {}): Metadata {
   const baseKeywords = [
-    'Geospatial Developer',
     'Software Engineer',
-    'Germany',
-    'ArcGIS',
-    'QGIS',
-    'OpenLayers',
     'Leaflet',
     'Python',
     'JavaScript',
     'TypeScript',
     'React',
     'Next.js',
-    'PostGIS',
-    'GIS',
+    'NodeJS',
+    'ExpressJS',
+    'MongoDB',
+    'PostgreSQL',
     'Web Development',
     'Data Visualization',
-    'Maps',
-    'Cartography',
   ];
 
   const allKeywords = [...baseKeywords, ...keywords, ...tags];
@@ -60,7 +55,7 @@ export function generateSEO({
       title,
       description,
       url,
-      siteName: 'Ronit Jadhav Portfolio',
+      siteName: 'Mudit Garg Portfolio',
       images: [
         {
           url: image,
@@ -80,7 +75,6 @@ export function generateSEO({
       title,
       description,
       images: [image],
-      creator: '@ronitjadhav', // Update with actual Twitter handle
     },
     robots: {
       index: true,
@@ -92,7 +86,7 @@ export function generateSEO({
 export function generateArticleSchema({
   headline,
   description,
-  author = 'Ronit Jadhav',
+  author = 'Mudit Garg',
   datePublished,
   dateModified,
   image,
@@ -152,7 +146,7 @@ export function generateProjectSchema({
     operatingSystem: 'Any',
     author: {
       '@type': 'Person',
-      name: 'Ronit Jadhav',
+      name: 'Mudit Garg',
     },
     dateCreated,
     keywords: technologies.join(', '),

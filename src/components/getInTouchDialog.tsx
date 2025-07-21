@@ -82,7 +82,7 @@ export function DialogComponent({
         serviceID,
         templateID,
         {
-          to_name: 'Ronit Jadhav',
+          to_name: 'Mudit Garg',
           from_name: input.name,
           email: input.email,
           message: input.message,
