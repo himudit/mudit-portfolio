@@ -10,8 +10,11 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import iconUrl from "leaflet/dist/images/marker-icon.png";
-import iconShadow from "leaflet/dist/images/marker-shadow.png";
+// import iconUrl from "leaflet/dist/images/marker-icon.png";
+// import iconShadow from "leaflet/dist/images/marker-shadow.png";
+const iconUrl = require('leaflet/dist/images/marker-icon.png');
+const iconShadow = require('leaflet/dist/images/marker-shadow.png');
+
 import { MapPin, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
