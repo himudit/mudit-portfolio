@@ -19,9 +19,9 @@ import { MapPin, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const DefaultIcon: L.Icon = new L.Icon({
-    iconUrl: iconUrl as string,
+    iconUrl: '/custom-marker.svg',
     shadowUrl: iconShadow as string,
-    iconSize: [25, 41],
+    iconSize: [41, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
 });
@@ -50,7 +50,7 @@ const timelineData: TimelineEntry[] = [
         locationName: "Gurugram, India",
         popupTitle: "SwaranSoft",
         popupDescription: "Worked on scalable frontend solutions using modern tech stack.",
-        imageUrl: "/swaranSoft.png" 
+        imageUrl: "/swaranSoft.png"
     },
     {
         id: 2,
@@ -61,7 +61,7 @@ const timelineData: TimelineEntry[] = [
         locationName: "Haryana, India",
         popupTitle: "Manav Rachna University",
         popupDescription: "Academic foundation in programming and systems design.",
-        imageUrl: "/MR.png" 
+        imageUrl: "/MR.png"
     },
 ];
 
@@ -79,26 +79,26 @@ const TimelineItem: React.FC<{
     onClick: () => void;
 }> = ({ entry, isActive, onClick }) => (
     <div
-  onClick={onClick}
-  className={cn(
-    "cursor-pointer p-4 border-l-4 transition-colors flex flex-col items-start gap-2",
-    isActive
-      ? "bg-yellow-100 dark:bg-gray-700 border-black"
-      : "hover:bg-gray-100 dark:hover:bg-gray-600 border-transparent"
-  )}
->
-  <img
-    src={entry.imageUrl}
-    alt={entry.title}
-    className="w-12 h-12 rounded-full border-2 border-black dark:border-white shadow-lg"
-  />
-  <h3 className="font-bold text-lg">{entry.title}</h3>
-  <p className="text-sm text-gray-500 dark:text-gray-300">{entry.date}</p>
-  <p className="text-sm text-gray-800 dark:text-gray-200">{entry.description}</p>
-  <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-1">
-    <MapPin size={16} /> {entry.locationName}
-  </p>
-</div>
+        onClick={onClick}
+        className={cn(
+            "cursor-pointer p-4 border-l-4 transition-colors flex flex-col items-start gap-2",
+            isActive
+                ? "bg-yellow-100 dark:bg-gray-700 border-black"
+                : "hover:bg-gray-100 dark:hover:bg-gray-600 border-transparent"
+        )}
+    >
+        <img
+            src={entry.imageUrl}
+            alt={entry.title}
+            className="w-12 h-12 rounded-full border-2 border-black dark:border-white shadow-lg"
+        />
+        <h3 className="font-bold text-lg">{entry.title}</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-300">{entry.date}</p>
+        <p className="text-sm text-gray-800 dark:text-gray-200">{entry.description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400 flex items-center gap-1">
+            <MapPin size={16} /> {entry.locationName}
+        </p>
+    </div>
 
 );
 

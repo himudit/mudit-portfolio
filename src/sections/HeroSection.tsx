@@ -183,9 +183,8 @@ const HeroSection = memo(function HeroSection() {
             variants={itemVariants}
             className="my-5 md:my-6 lg:my-8 text-base md:text-lg lg:text-xl font-normal leading-relaxed lg:leading-relaxed text-center lg:text-left max-w-2xl lg:max-w-xl"
           >
-            Based in Germany, I&#39;m a Geospatial Developer and a Software Engineer. I love to work
-            with maps, data, and code. I&#39;m passionate about open-source, web technologies, and
-            building cool stuff.
+            I'm a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.
+
           </motion.p>
 
           <div className="flex flex-col items-center lg:items-start mb-6 md:mb-8 w-full">
