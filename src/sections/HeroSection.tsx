@@ -301,7 +301,6 @@ const HeroSection = memo(function HeroSection() {
           ))}
         </Marquee>
       </motion.div>
-
       {/* Chatbot positioned above the marquee in bottom-right corner on desktop */}
       {/* <motion.div
         variants={buttonVariants}
