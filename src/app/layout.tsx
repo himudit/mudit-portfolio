@@ -13,11 +13,11 @@ const spaceGrotesk = Space_Grotesk({
 // Metadata needs to be exported this way in Next.js 13+
 export const metadata: Metadata = {
   title: {
-    default: 'Mudit Garg Full Stack Developer & Software Engineer',
+    default: 'Mudit Garg Full-Stack Developer & Software Engineer',
     template: '%s | Mudit Garg',
   },
   description:
-    "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies. Expert in ArcGIS, QGIS, OpenLayers, Python, and JavaScript.",
+    " I'm a Full-Stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.",
   keywords: [
     'Full Stack Developer',
     'Software Engineer',
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
+    title: 'Mudit Garg - Full-Stack Developer & Software Engineer',
     description:
-      "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies. Expert in ArcGIS, QGIS, OpenLayers, Python, and JavaScript.",
+      " I'm a Full-Stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.",
     url: 'https://github.com/himudit',
     siteName: 'Mudit Garg Portfolio',
     images: [
@@ -69,16 +69,16 @@ export const metadata: Metadata = {
         url: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
         width: 1200,
         height: 630,
-        alt: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
+        alt: 'Mudit Garg - Full-Stack Developer & Software Engineer',
         type: 'image/png',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Ronit Jadhav - Geospatial Developer & Software Engineer',
+    title: 'Mudit Garg - Full-Stack Developer & Software Engineer',
     description:
-      "Based in Germany, I'm a Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies.",
+      "I'm a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.",
     images: ['https://ronitjadhav.github.io/ronit.io/ronit.png'],
     creator: '@ronitjadhav', // Add your Twitter handle if you have one
   },
@@ -100,9 +100,9 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Mudit Garg',
-    jobTitle: 'Geospatial Developer & Software Engineer',
+    jobTitle: 'Full-Stack Developer & Software Engineer',
     description:
-      'Geospatial Developer and Software Engineer specializing in maps, data visualization, and web technologies.',
+      'Full-Stack Developer and Software Engineer specializing in maps, data visualization, and web technologies.',
     url: 'https://ronitjadhav.github.io/ronit.io',
     image: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
     address: {

@@ -48,7 +48,7 @@ export default async function Image() {
               margin: '0 0 20px 0',
             }}
           >
-            Ronit Jadhav
+            Mudit Garg
           </h1>
           <h2
             style={{
