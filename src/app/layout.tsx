@@ -2,6 +2,7 @@ import { Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Metadata } from 'next';
+import { ForceDarkTheme } from './ForceDarkTheme';
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -66,7 +67,7 @@ export const metadata: Metadata = {
     siteName: 'Mudit Garg Portfolio',
     images: [
       {
-        url: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
+        url: '/muditLogo.png',
         width: 1200,
         height: 630,
         alt: 'Mudit Garg - Full-Stack Developer & Software Engineer',
@@ -79,7 +80,7 @@ export const metadata: Metadata = {
     title: 'Mudit Garg - Full-Stack Developer & Software Engineer',
     description:
       "I'm a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.",
-    images: ['https://ronitjadhav.github.io/ronit.io/ronit.png'],
+    images: ['/muditLogo.png'],
     creator: '@ronitjadhav', // Add your Twitter handle if you have one
   },
   verification: {
@@ -104,7 +105,7 @@ export default function RootLayout({
     description:
       'Full-Stack Developer and Software Engineer specializing in maps, data visualization, and web technologies.',
     url: 'https://ronitjadhav.github.io/ronit.io',
-    image: 'https://ronitjadhav.github.io/ronit.io/ronit.png',
+    image: '/muditLogo.png',
     address: {
       '@type': 'PostalAddress',
       addressCountry: 'Germany',
@@ -151,10 +152,11 @@ export default function RootLayout({
       <body className={spaceGrotesk.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem={false}
           disableTransitionOnChange
         >
+          <ForceDarkTheme />
           {children}
         </ThemeProvider>
       </body>

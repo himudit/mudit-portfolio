@@ -202,7 +202,7 @@ function MobileNavLinks({
     { href: '#home', label: 'Home' },
     { href: '#journey', label: 'Journey' },
     { href: '#projects', label: 'Projects' },
-    { href: 'https://dev.to/ronitjadhav', label: 'Blogs' },
+    // { href: 'https://dev.to/ronitjadhav', label: 'Blogs' },
   ];
 
   return (
