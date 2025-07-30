@@ -28,15 +28,6 @@ const ProjectsShowcase = () => {
       live: 'https://expensemate-nu.vercel.app/',
       image: expensemate,
     },
-    {
-      title: 'Openlayers Benchmark',
-      description:
-        'Developed at Camptocamp as part of my internship, this project helps to benchmark the performance of WebGL and Canvas rendering in Openlayers. It includes a variety of tests and visualizations to compare the rendering speed of different layers.',
-      tech: ['Openlayers', 'TypeScript'],
-      github: 'https://github.com/openlayers/bench',
-      live: 'https://openlayers.org/bench/',
-      image: olBenchImage,
-    },
   ];
 
   return (
