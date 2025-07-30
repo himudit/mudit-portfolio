@@ -28,6 +28,15 @@ const ProjectsShowcase = () => {
       live: 'https://expensemate-nu.vercel.app/',
       image: expensemate,
     },
+    {
+      title: 'Openlayers Benchmark',
+      description:
+        'Developed at Camptocamp as part of my internship, this project helps to benchmark the performance of WebGL and Canvas rendering in Openlayers. It includes a variety of tests and visualizations to compare the rendering speed of different layers.',
+      tech: ['Openlayers', 'TypeScript'],
+      github: 'https://github.com/openlayers/bench',
+      live: 'https://openlayers.org/bench/',
+      image: olBenchImage,
+    },
   ];
 
   return (
@@ -60,7 +69,7 @@ const ProjectsShowcase = () => {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group bg-bg p-6 rounded-lg transform transition-transform hover:scale-105 dark:bg-darkBg w-full h-full"
+              className="group bg-bg p-6 rounded-lg transform transition-transform hover:scale-105 dark:bg-darkBg"
               style={{
                 border: '3px solid black',
                 boxShadow: '8px 8px 0px 0px #000000',
