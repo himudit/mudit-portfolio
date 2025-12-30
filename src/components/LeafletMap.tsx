@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import {
     MapContainer,
     TileLayer,
@@ -11,9 +11,7 @@ import {
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
 // import iconUrl from "leaflet/dist/images/marker-icon.png";
-// import iconShadow from "leaflet/dist/images/marker-shadow.png";
-const iconUrl = require('leaflet/dist/images/marker-icon.png');
-const iconShadow = require('leaflet/dist/images/marker-shadow.png');
+import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 import { MapPin, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -43,8 +41,19 @@ interface TimelineEntry {
 const timelineData: TimelineEntry[] = [
     {
         id: 1,
+        title: "SDE Intern @InnCircles",
+        date: "Aug-2025 - Present",
+        description: "Developing web and mobile applications using Angular and React Native, with robust backend systems.",
+        location: [17.4450, 78.3915],
+        locationName: "Hyderabad, India",
+        popupTitle: "InnCircles",
+        popupDescription: "Worked on scalable web, mobile, and backend solutions using Angular, React Native, and modern server technologies.",
+        imageUrl: "/inncircles.png"
+    },
+    {
+        id: 2,
         title: "Web Developer Intern @SwaranSoft",
-        date: "2025 - Present",
+        date: "June - Aug-2025",
         description: "Building interactive UI using React and Tailwind CSS.",
         location: [28.415281, 77.041833],
         locationName: "Gurugram, India",
@@ -53,7 +62,7 @@ const timelineData: TimelineEntry[] = [
         imageUrl: "/swaranSoft.png"
     },
     {
-        id: 2,
+        id: 3,
         title: "Student @ Manav Rachna University",
         date: "2022 - Present",
         description: "Pursued B.Tech in Computer Science in Specilization with AIML.",
