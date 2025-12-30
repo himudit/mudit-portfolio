@@ -234,7 +234,7 @@ const HeroSection = memo(function HeroSection() {
               className="relative z-10 mt-2"
             >
               <a
-                href="https://drive.google.com/file/d/1KxiV0IMKVzTSPGUcBnPUxmT6Yqalqfp5/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1OeVghTig04_O4_ePqQZ56YVkCRYArP6C/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center h-5 text-base font-heading md:h-12 md:text-lg lg:h-14 lg:text-xl px-6 rounded-md bg-main text-black hover:bg-main transition-all duration-300 border-black"
