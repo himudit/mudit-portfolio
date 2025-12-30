@@ -21,8 +21,6 @@ Welcome to my personal website!
 
 **ronit.io** is my personal website where I share my projects, blog posts, and more. It's built using [Next.js](https://nextjs.org) and styled with [Tailwind CSS](https://tailwindcss.com). The site is designed to be fast, accessible, and easy to maintain.
 
-The website will feature an **AI-powered chatbot** (coming soon) that can answer questions about my professional background and experience, making it easy for visitors to learn more about my work and projects interactively.
-
 ## Screenshots
 
 <!-- If you have screenshots, add them here -->
