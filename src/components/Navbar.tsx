@@ -99,12 +99,12 @@ const NavBar = () => {
             <NavLinks />
 
             <div className="flex items-center gap-4">
-              <DialogComponent
+              {/* <DialogComponent
                 triggerButtonText="Get in Touch!"
                 dialogTitle="Get in Touch"
                 dialogDescription="Please fill out the form below to get in touch with me."
                 inputLabels={{ name: 'Name', email: 'Email', message: 'Message' }}
-              />
+              /> */}
               <ThemeSwitcher />
             </div>
           </div>
