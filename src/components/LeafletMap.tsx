@@ -175,11 +175,12 @@ const MapComponent: React.FC = () => {
 
                     <div className="w-full h-full">
                         <MapContainer
-                            center={[28.45, 77.15]} // Balanced between Gurugram and Faridabad
-                            zoom={10}
-                            scrollWheelZoom={true}
-                            style={{ height: "100%", width: "100%" }}
-                        >
+    center={[17.4450, 78.3915]} // Inncircles, Hyderabad (Gachibowli area)
+    zoom={5}
+    scrollWheelZoom={true}
+    style={{ height: "100%", width: "100%" }}
+>
+
                             <TileLayer
                                 attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
                                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
