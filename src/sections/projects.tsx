@@ -1,10 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import digipinImage from '../media/digipin.jpeg';
 import edusphere from '../media/edusphere.png';
 import expensemate from '../media/expensemate.png'
-import qgisHubImage from '../media/QGIS-Banner.jpg';
-import olBenchImage from '../media/olBench.png';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 

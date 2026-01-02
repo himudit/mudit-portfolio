@@ -15,6 +15,7 @@ import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
 import { MapPin, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const DefaultIcon: L.Icon = new L.Icon({
     iconUrl: '/custom-marker.svg',
@@ -96,9 +97,11 @@ const TimelineItem: React.FC<{
                 : "hover:bg-gray-100 dark:hover:bg-gray-600 border-transparent"
         )}
     >
-        <img
+        <Image
             src={entry.imageUrl}
             alt={entry.title}
+            width={300}
+  height={300}
             className="w-12 h-12 rounded-full border-2 border-black dark:border-white shadow-lg"
         />
         <h3 className="font-bold text-lg">{entry.title}</h3>

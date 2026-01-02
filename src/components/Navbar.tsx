@@ -7,7 +7,6 @@ import { ThemeSwitcher } from './theme-switcher';
 import { DialogComponent } from './getInTouchDialog';
 import Image from 'next/image';
 import muditLogo from '@/media/muditLogo.png';
-import ronitLogo from '@/media/ronitLogo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 

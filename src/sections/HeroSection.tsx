@@ -1,21 +1,16 @@
 'use client';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { BiLogoPostgresql } from 'react-icons/bi';
 import Marquee from 'react-fast-marquee';
 import { motion } from 'framer-motion';
 import muditImage from '@/media/mudit_img2(cyber).jpg';
 import {
-  SiAngular,
-  SiArcgis,
   SiDocker,
   SiGit,
   SiHtml5,
   SiJavascript,
   SiLeaflet,
-  SiOpenlayers,
   SiPython,
-  SiQgis,
   SiTypescript,
   SiTailwindcss,
   SiNodedotjs,
@@ -27,8 +22,6 @@ import {
   SiPostgresql
 } from 'react-icons/si';
 import Image from 'next/image';
-import { DialogComponent } from '@/components/getInTouchDialog';
-import ChatbotToggle from '@/components/ChatbotToggle';
 import React, { memo } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -183,7 +176,7 @@ const HeroSection = memo(function HeroSection() {
             variants={itemVariants}
             className="my-5 md:my-6 lg:my-8 text-base md:text-lg lg:text-xl font-normal leading-relaxed lg:leading-relaxed text-center lg:text-left max-w-2xl lg:max-w-xl"
           >
-            I'm a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.
+            I&apos;m a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.
 
           </motion.p>
 
