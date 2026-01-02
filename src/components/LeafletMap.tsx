@@ -9,7 +9,7 @@ import { MapPin, Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-const DefaultIcon: L.Icon = new L.Icon({
+const DefaultIcon = new L.Icon({
   iconUrl: '/custom-marker.svg',
   shadowUrl: iconShadow.src,
   iconSize: [41, 41],
@@ -17,7 +17,10 @@ const DefaultIcon: L.Icon = new L.Icon({
   popupAnchor: [1, -34],
 });
 
-L.Marker.prototype.options.icon = DefaultIcon;
+if (typeof window !== 'undefined') {
+  L.Marker.prototype.options.icon = DefaultIcon;
+}
+
 
 interface TimelineEntry {
   id: number;
@@ -169,6 +172,7 @@ const MapComponent: React.FC = () => {
 
           <div className="w-full h-full">
             <MapContainer
+            key="leaflet-map"
               center={[17.445, 78.3915]} // Inncircles, Hyderabad (Gachibowli area)
               zoom={5}
               scrollWheelZoom={true}
