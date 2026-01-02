@@ -12,10 +12,18 @@ import Footer from '@/sections/footer';
 //   ssr: false,
 // });
 
-const MapComponent = dynamic(() => import('@/components/LeafletMap'), {
-  loading: () => <div className="h-screen flex items-center justify-center">Loading Map...</div>,
-  ssr: false, // disable server-side rendering (Leaflet needs window)
-});
+// const MapComponent = dynamic(() => import('@/components/LeafletMap'), {
+//   loading: () => <div className="h-screen flex items-center justify-center">Loading Map...</div>,
+//   ssr: false, // disable server-side rendering (Leaflet needs window)
+// });
+
+// import dynamic from 'next/dynamic';
+
+const MapComponent = dynamic(
+  () => import('@/components/LeafletMap.client'),
+  { ssr: false }
+);
+
 
 const ProjectsShowcase = dynamic(() => import('@/sections/projects'), {
   loading: () => (
