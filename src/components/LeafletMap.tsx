@@ -10,16 +10,14 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-// import iconUrl from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
-
 import { MapPin, Menu } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 const DefaultIcon: L.Icon = new L.Icon({
     iconUrl: '/custom-marker.svg',
-    shadowUrl: iconShadow as string,
+    shadowUrl: iconShadow.src,
     iconSize: [41, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
