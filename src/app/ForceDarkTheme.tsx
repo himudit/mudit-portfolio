@@ -1,15 +1,15 @@
 'use client';
-import { useEffect } from "react";
-import { useTheme } from "next-themes";
+import { useEffect } from 'react';
+import { useTheme } from 'next-themes';
 
 export function ForceDarkTheme() {
-    const { setTheme } = useTheme();
+  const { setTheme } = useTheme();
 
-    useEffect(() => {
-        if (!localStorage.getItem("theme")) {
-            setTheme("dark");
-        }
-    }, [setTheme]);
+  useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      setTheme('dark');
+    }
+  }, [setTheme]);
 
-    return null;
+  return null;
 }

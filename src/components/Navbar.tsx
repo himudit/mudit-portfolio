@@ -89,7 +89,7 @@ const NavBar = () => {
               }}
             >
               {/* <Image src={ronitLogo} alt="Ronit Logo" width={70} height={70} /> */}
-              <Image src={muditLogo} alt="Ronit Logo" width={150} height={150} className='mt-4'/>
+              <Image src={muditLogo} alt="Ronit Logo" width={150} height={150} className="mt-4" />
             </a>
           </h1>
 

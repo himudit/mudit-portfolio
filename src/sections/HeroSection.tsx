@@ -19,7 +19,7 @@ import {
   SiRedux,
   SiReact,
   SiRedis,
-  SiPostgresql
+  SiPostgresql,
 } from 'react-icons/si';
 import Image from 'next/image';
 import React, { memo } from 'react';
@@ -61,7 +61,6 @@ const skills = [
   { text: 'Leaflet', Icon: SiLeaflet, color: '#199900' },
   { text: 'Python', Icon: SiPython, color: '#3776AB' },
 ];
-
 
 const HeroSection = memo(function HeroSection() {
   const containerVariants = {
@@ -176,8 +175,8 @@ const HeroSection = memo(function HeroSection() {
             variants={itemVariants}
             className="my-5 md:my-6 lg:my-8 text-base md:text-lg lg:text-xl font-normal leading-relaxed lg:leading-relaxed text-center lg:text-left max-w-2xl lg:max-w-xl"
           >
-            I&apos;m a full-stack developer who transforms complex problems into simple, elegant solutions — from dynamic dashboards to AI-powered tools.
-
+            I&apos;m a full-stack developer who transforms complex problems into simple, elegant
+            solutions — from dynamic dashboards to AI-powered tools.
           </motion.p>
 
           <div className="flex flex-col items-center lg:items-start mb-6 md:mb-8 w-full">
@@ -236,8 +235,6 @@ const HeroSection = memo(function HeroSection() {
               </a>
             </motion.div>
 
-
-
             {/* Chatbot button - positioned below Get in Touch on mobile, right corner on desktop */}
             {/* <motion.div
               variants={buttonVariants}
@@ -287,7 +284,10 @@ const HeroSection = memo(function HeroSection() {
               key={id}
               whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
             >
-              <skill.Icon className="text-2xl sm:text-3xl lg:text-4xl mr-2 sm:mr-3" color={skill.color} />
+              <skill.Icon
+                className="text-2xl sm:text-3xl lg:text-4xl mr-2 sm:mr-3"
+                color={skill.color}
+              />
               <span className="text-lg sm:text-xl lg:text-2xl font-heading">{skill.text}</span>
             </motion.div>
           ))}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import edusphere from '../media/edusphere.png';
-import expensemate from '../media/expensemate.png'
+import expensemate from '../media/expensemate.png';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
@@ -11,7 +11,15 @@ const ProjectsShowcase = () => {
       title: 'EduSphere - Online Course Management System',
       description:
         'A PERN stack e-learning platform enabling secure course purchases (Razorpay), role-based access (JWT), and media-rich content (Cloudinary) with automated enrollment and responsive dashboards.',
-      tech: ['TypeScript', 'React.js', 'NodeJS', 'ExpressJS', 'PostgreSQL', 'Cloudinary', 'Razorpay'],
+      tech: [
+        'TypeScript',
+        'React.js',
+        'NodeJS',
+        'ExpressJS',
+        'PostgreSQL',
+        'Cloudinary',
+        'Razorpay',
+      ],
       github: 'https://github.com/himudit/EduSphere',
       live: 'https://edusphere-wine.vercel.app/',
       image: edusphere, // Ensure this path is correct
