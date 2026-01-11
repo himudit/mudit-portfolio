@@ -411,10 +411,11 @@ const MapComponent: React.FC = () => {
           zoom={5}
           scrollWheelZoom
           style={{ height: '100%', width: '100%' }}
-          whenReady={(event) => {
-            mapRef.current = event.target;
+          whenReady={() => {
+            // map is ready, but not passed here
           }}
         >
+
 
           <TileLayer
             attribution="© OpenStreetMap"
